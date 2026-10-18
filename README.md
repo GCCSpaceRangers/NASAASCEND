@@ -28,16 +28,6 @@ python3 -m http.server 8000
 
 then visit http://localhost:8000. Double-clicking `index.html` also works.
 
-## First-time setup: download the photos
-
-The photos were originally hosted by the Airo site builder, and this repo has **no connection to Airo** (no links, no fallback). Run this **once** to copy the photos into the repo (needs [Node.js](https://nodejs.org) 18+):
-
-```
-node scripts/download-images.mjs
-```
-
-Then commit the new `assets/images/` files. After that, delete `scripts/download-images.mjs`, since it is no longer needed. If any image fails to download, save it by hand into `assets/images/` using the same folder structure (e.g. `assets/images/team/sawyer.jpg`). A missing image shows as a broken image on the page, so it is easy to spot.
-
 ## How to make common changes
 
 **Add a weekly progress entry** — open `progress.html`, find the "Coming Soon" or "Upcoming" entry for the week, and fill it in. To start from scratch, copy a whole `<div class="entry">…</div>` block and edit the text. Photos go in `assets/images/progress/week-N/` and are added like this:
