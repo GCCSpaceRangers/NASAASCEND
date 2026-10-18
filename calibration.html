@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sensor Calibration — Space Rangers NASA ASCEND GCC</title>
+  <meta name="description" content="Space Rangers is a NASA ASCEND student engineering team at Glendale Community College designing and building a scientific payload for high-altitude balloon flight.">
+  <meta property="og:title" content="Sensor Calibration — Space Rangers NASA ASCEND GCC">
+  <meta property="og:description" content="From design to flight — follow our team's engineering journey through the NASA ASCEND program.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="calibration">
+  <!-- Header and footer are shared by every page. Edit them in js/main.js -->
+  <div id="site-header"></div>
+
+  <main class="page" id="p-calibration">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow acc">Our Testing</p>
+        <div class="bar acc-bg"></div>
+        <h1>Sensor Calibration</h1>
+        <p class="lead">How we turn voltage readings from our sensors into measurements we can understand.</p>
+      </div>
+    </section>
+    <section class="sec">
+      <div class="wrap">
+        <p class="eyebrow">Space Rangers</p>
+        <div class="bar"></div>
+        <h2>What Is Calibration?</h2>
+        <p class="muted lg">A sensor gives the FDR an electrical reading. Calibration helps us convert that reading into a useful measurement, such as temperature, pressure, or acceleration. Our team checked voltages and took measurements to work out the equations below.</p>
+      </div>
+    </section>
+    <section class="sec">
+      <div class="wrap">
+        <p class="eyebrow">Space Rangers</p>
+        <div class="bar"></div>
+        <h2>Our Five Equations</h2>
+        <div class="grid2">
+          <div class="card" style="padding:24px">
+            <h3>Inside Temperature — T1</h3>
+            <p class="eq">T₁(v₀) = (v₀ − 0.457143) / 0.0108571</p>
+            <p class="muted">FDR port V0</p>
+          </div>
+          <div class="card" style="padding:24px">
+            <h3>Outside Temperature — T2</h3>
+            <p class="eq">T₂(v₁) = (v₁ − 0.446471) / 0.0116286</p>
+            <p class="muted">FDR port V1</p>
+          </div>
+          <div class="card" style="padding:24px">
+            <h3>Air Pressure — P</h3>
+            <p class="eq">P(v₄) = 3.745 × v₄ − 1.2645</p>
+            <p class="muted">FDR port V4</p>
+          </div>
+          <div class="card" style="padding:24px">
+            <h3>X-Axis Acceleration — Ax</h3>
+            <p class="eq">Ax(v₅) = (v₅ − 1.73) / 0.14</p>
+            <p class="muted">FDR port V5</p>
+          </div>
+          <div class="card" style="padding:24px">
+            <h3>Y-Axis Acceleration — Ay</h3>
+            <p class="eq">Ay(v₆) = (v₆ − 1.5625) / 0.1165</p>
+            <p class="muted">FDR port V6</p>
+          </div>
+        </div>
+        <p class="muted">In these equations, v means the voltage measured at the numbered FDR port. The output units should be confirmed against our team’s calibration notes.</p>
+      </div>
+    </section>
+    <section class="sec">
+      <div class="wrap">
+        <p class="eyebrow">Space Rangers</p>
+        <div class="bar"></div>
+        <h2>Why This Matters</h2>
+        <p class="muted lg">After the flight, we can use these equations to understand the numbers recorded by the FDR. We will also check that our readings make sense before launch.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
