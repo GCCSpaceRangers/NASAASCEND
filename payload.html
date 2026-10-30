@@ -53,57 +53,76 @@
         <div class="bar"></div>
         <h2>The Hardware</h2>
         <p class="muted lg narrow">Our payload is built around a Flight Data Recorder (FDR) that collects data from our sensors and stores it in EEPROM memory. Everything fits inside a foam housing designed to protect the components during the flight.</p>
-        <div class="grid4" style="margin-top:2rem">
-          <div class="card">
-            <h3>RP2040</h3>
-            <p class="muted sm">Main microcontroller — the brain</p>
+        <div class="hw-split">
+          <div class="hw-parts">
+            <div class="card">
+              <h3>RP2040</h3>
+              <p class="muted sm">Main microcontroller — the brain</p>
+            </div>
+            <div class="card">
+              <h3>ADS1115 ×2</h3>
+              <p class="muted sm">Converts analog sensor signals to digital</p>
+            </div>
+            <div class="card">
+              <h3>GNSS Module</h3>
+              <p class="muted sm">GPS — tracks altitude and position</p>
+            </div>
+            <div class="card">
+              <h3>Temp Sensors (×2)</h3>
+              <p class="muted sm">Inside and outside temperature</p>
+            </div>
+            <div class="card">
+              <h3>Pressure Sensor</h3>
+              <p class="muted sm">Measures air pressure as we climb</p>
+            </div>
+            <div class="card">
+              <h3>Accelerometer</h3>
+              <p class="muted sm">Measures X and Y axis movement</p>
+            </div>
+            <div class="card">
+              <h3>3V &amp; 5V Regulators</h3>
+              <p class="muted sm">Provide stable voltage to all components</p>
+            </div>
+            <div class="card">
+              <h3>EEPROM</h3>
+              <p class="muted sm">Stores all sensor data during the flight</p>
+            </div>
           </div>
-          <div class="card">
-            <h3>ADS1115 ×2</h3>
-            <p class="muted sm">Converts analog sensor signals to digital</p>
-          </div>
-          <div class="card">
-            <h3>GNSS Module</h3>
-            <p class="muted sm">GPS — tracks altitude and position</p>
-          </div>
-          <div class="card">
-            <h3>Temp Sensors (×2)</h3>
-            <p class="muted sm">Inside and outside temperature</p>
-          </div>
-          <div class="card">
-            <h3>Pressure Sensor</h3>
-            <p class="muted sm">Measures air pressure as we climb</p>
-          </div>
-          <div class="card">
-            <h3>Accelerometer</h3>
-            <p class="muted sm">Measures X and Y axis movement</p>
-          </div>
-          <div class="card">
-            <h3>3V &amp; 5V Regulators</h3>
-            <p class="muted sm">Provide stable voltage to all components</p>
-          </div>
-          <div class="card">
-            <h3>EEPROM</h3>
-            <p class="muted sm">Stores all sensor data during the flight</p>
-          </div>
+          <figure class="figure">
+            <img alt="Space Rangers payload circuit board showing RP2040 microcontroller, ADS1115 ADC chips, GNSS module, and sensor connections" src="assets/images/payload/circuit-board.jpg" style="transform: rotate(180deg);">
+            <figcaption>Space Rangers payload circuit board</figcaption>
+          </figure>
         </div>
-        <figure class="figure">
-          <img alt="Space Rangers payload circuit board showing RP2040 microcontroller, ADS1115 ADC chips, GNSS module, and sensor connections" src="assets/images/payload/circuit-board.jpg" style="transform: rotate(180deg);">
-          <figcaption>Space Rangers payload circuit board</figcaption>
-        </figure>
       </div>
     </section>
 
     <section class="sec alt">
-      <div class="wrap narrow">
+      <div class="wrap">
         <p class="eyebrow">System Design</p>
         <div class="bar"></div>
         <h2>System Block Diagram</h2>
-        <p class="muted lg">This diagram shows how all the parts of our payload connect together</p>
-        <figure class="figure">
-          <img alt="System block diagram showing how sensors, microcontroller, power supply, and data storage connect in the Space Rangers payload" src="assets/images/payload/system-block-diagram.png">
-          <figcaption>Space Rangers payload system block diagram</figcaption>
-        </figure>
+        <p class="muted lg narrow">This diagram shows how all the parts of our payload connect together</p>
+        <div class="diagrams">
+          <!-- To change a diagram: edit its title (h3) and its image file name (src). Click the image on the page to open it full size. -->
+          <figure class="diagram">
+            <h3>Logic SBD</h3>
+            <a href="assets/images/payload/system-block-diagram.png" target="_blank" rel="noopener">
+              <img alt="System block diagram showing how sensors, microcontroller, power supply, and data storage connect in the Space Rangers payload" src="assets/images/payload/system-block-diagram.png">
+            </a>
+          </figure>
+          <figure class="diagram">
+            <h3>Power SBD</h3>
+            <a href="assets/images/payload/system-block-diagram-2.png" target="_blank" rel="noopener">
+              <img alt="Describe diagram 2 here" src="assets/images/payload/system-block-diagram-2.png">
+            </a>
+          </figure>
+          <figure class="diagram">
+            <h3>USB Power SBD</h3>
+            <a href="assets/images/payload/system-block-diagram-3.png" target="_blank" rel="noopener">
+              <img alt="Describe diagram 3 here" src="assets/images/payload/system-block-diagram-3.png">
+            </a>
+          </figure>
+        </div>
       </div>
     </section>
 

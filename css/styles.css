@@ -983,3 +983,57 @@ footer .legal {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
+/* Hardware section: components on the left, circuit board photo on the right (payload page) */
+.hw-split {
+  display:grid;
+  gap:2rem;
+  grid-template-columns:1fr;
+  margin-top:2rem;
+  align-items:start;
+}
+.hw-parts {
+  display:grid;
+  gap:1rem;
+  grid-template-columns:repeat(2,1fr);
+}
+.hw-split .figure {
+  margin:0;
+}
+.hw-split .figure img {
+  max-width:100%;
+}
+@media(min-width:1024px) {
+  .hw-split {
+    grid-template-columns:3fr 2fr;
+    gap:2.5rem;
+  }
+}
+
+/* System block diagrams: up to three side by side, each with a title (payload page) */
+.diagrams {
+  display:grid;
+  gap:1.5rem;
+  grid-template-columns:1fr;
+  margin-top:2rem;
+}
+@media(min-width:900px) {
+  .diagrams {
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+.diagram {
+  margin:0;
+}
+.diagram h3 {
+  font-size:1.05rem;
+  margin-bottom:.75rem;
+}
+.diagram img {
+  display:block;
+  width:100%;
+  height:auto;
+  background:#fff;
+  border:1px solid var(--bd);
+  border-radius:12px;
+}
