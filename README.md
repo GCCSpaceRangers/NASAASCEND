@@ -57,14 +57,6 @@ then visit http://localhost:8000. Double-clicking `index.html` also works.
 4. **Keep changes small.** One week's progress entry or one fix per pull request makes review quick.
 5. **Check before you merge.** Open the changed page in Live Server and click through it, including on a narrow window (phone size).
 
-## Hosting on GitHub Pages
-
-*Settings → Pages → Build and deployment → Source: "Deploy from a branch" → Branch: `main`, folder: `/ (root)` → Save.*
-
-The site is published at `https://<org-or-username>.github.io/<repo-name>/` within a minute or two of every merge to `main`. All links in the site are relative, so it works from that sub-path with no changes.
-
-To use the custom domain (gccazascendspacerangers.com), you first need to control its DNS. It is likely registered through Airo, so check who owns it. If you can control it, add it under *Settings → Pages → Custom domain* and follow GitHub's DNS instructions.
-
 ## Notes
 
 - Fonts (Inter and Space Grotesk) load from Google Fonts. Everything else is in this repo.
